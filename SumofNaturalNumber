@@ -1,0 +1,19 @@
+/*1. SumofNaturalNumber
+Write a C program to add all the natural number from 1 to n. Ask the user to give n value and print the addition value.
+*/
+#include<stdio.h>
+int main()
+{
+	int n,x=0;
+	printf("Addition Of n natural number:");
+	printf("\nEnter Your Number : ");
+	scanf("%d",&n);
+	for(int i=1;i<=n;i++)
+	{
+		 x =x+i;
+	}
+
+	printf("%d",x);
+	return 0;
+	
+}
