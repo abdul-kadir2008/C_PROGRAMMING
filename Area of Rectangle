@@ -1,0 +1,25 @@
+/*2? Area of Rectangle
+
+Function name: area
+
+Input: length and width (float)
+
+Return: area
+*/
+#include<stdio.h>
+float area(float l,float w)
+{
+	float area = (l * w);
+//	return area;
+}
+int main()
+{
+	float a,b;
+	printf("Enter Length of Rectangle:");
+	scanf("%f",&a);
+	printf("\nEnter width of Rectangle:");
+	scanf("%f",&b);
+	float result = area(a,b);
+	printf("Area of Reactangle:%.2f",result);
+	return 0;
+}
