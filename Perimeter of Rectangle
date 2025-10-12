@@ -1,0 +1,28 @@
+/*
+Perimeter of Rectangle
+
+Function name: perimeter
+
+Input: length and width (float)
+
+Return: perimeter
+*/
+#include<stdio.h>
+float perimeter(float l, float w)
+{
+	float peri = 2*(l+w);
+	return peri;
+	
+}
+int main()
+{
+	float a,b;
+	printf("Enter Your Length of Rectangle:");
+	scanf("%f",&a);
+	printf("\nEnter Your width of Rectangle:");
+	scanf("%f",&b);
+	float result= perimeter(a,b);
+	printf("Perimeter of Rectangle %.2f",result);
+	return 0;
+	
+}
