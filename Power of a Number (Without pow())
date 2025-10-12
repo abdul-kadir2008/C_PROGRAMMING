@@ -1,0 +1,27 @@
+/* 3. Power of a Number (Without pow())
+ Write a function int power(int base, int exp) to compute base^exp using loops.
+ Example 1: 2^5 = 32
+ Example 2: 3^3 = 27
+ */
+ #include<stdio.h>
+ int power(int base,int exp)
+ { 
+ int result=1;
+ for(int i=1;i<=exp;i++)
+ {
+ 	result =result*base;
+ }
+ 	
+ 	return result;
+ }
+ int main()
+ {
+ 	int i,j;
+ 	printf("Enter Base: ");
+ 	scanf("%d",&i);
+ 	printf("Enter exp: ");
+ 	scanf("%d",&j);
+ 	int kadir =power(i,j);
+ 	printf("Power of a Number %d",kadir);
+ 	return 0;
+ }
