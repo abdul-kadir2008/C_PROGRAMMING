@@ -1,0 +1,32 @@
+/*Palindrome Number Check
+ Write a function int isPalindrome(int num).
+ Example 1: 121 ? Palindrome
+ Example 2: 123 ? Not Palindrom
+ */
+ #include<stdio.h>
+ int isPalindrome(int num)
+ {
+ 	int orignal = num;
+ 	int reverse =0;
+ 	int reminder;
+while(num!=0){
+
+reminder = num % 10; 	
+ reverse = reverse * 10 + reminder;
+ num = 	num/10;
+}
+ return reverse;
+ }
+ int main()
+ {
+ 	int n;
+ 	
+ 	printf("Enter Your Number:");
+ 	scanf("%d",&n);
+ 	int palidrome =isPalindrome(n);
+ 	if(n==palidrome)
+ 	printf("%d Palidrome Number",palidrome);
+ 	else
+ 	printf("%d not Palidrome Number",n);
+ 	return 0;
+ }
