@@ -1,0 +1,36 @@
+ /*Maximum of Three Numbers
+ Write a function int maxOfThree(int a, int b, int c).
+ Example 1: 10, 25, 15 ? 25
+ Example 2: 45, 9, 78 ? 78*/
+ #include<stdio.h>
+ int maxOfThree(int a,int b,int c)
+ {
+ 	int s;
+ 	if(a>b&&b>c){
+ 	printf("Max Of Three %d",a);
+ 	int s=a;}
+ 	else if(b>c){
+ 	printf("Max Of Three %d",b);
+ 	int s=b;
+ }
+ 	else
+ 	{
+ 	printf("Max Of Three %d",c);
+ 	int s=c;
+	 }
+ 	return s;
+ 	
+ }
+ int main()
+ {
+ 	int i,j,k;
+ 	printf("Enter Your First Number: ");
+ 	scanf("%d",&i);
+	 printf("\nEnter Your Second Number: ");
+ 	scanf("%d",&j);
+ 	printf("\nEnter Your third Number: ");
+ 	scanf("%d",&k);
+ 	maxOfThree(i,j,k);
+ 	
+	 return 0;
+ }
