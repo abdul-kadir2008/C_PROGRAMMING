@@ -1,0 +1,26 @@
+/* Swap Two Numbers (Call by Reference)
+ Write a function void swap(int *a, int *b).
+ Example 1: 10?20
+ Example 2: 5?9
+*/
+#include<stdio.h>
+ void swep(int *x,int *y)
+{
+	int holder;
+	holder = *x;
+	*x = *y;
+	*y = holder;
+	//return x,y;
+	}
+	int main()
+	{
+		int a,b;
+		printf("Enter Your First Number:");
+		scanf("%d",&a);
+		printf("Enter Your Second Number:");
+		scanf("%d",&b);
+		swep(&a,&b);
+		printf("After Swiping Value:\n first number:%d\nSecond Number: %d",a,b);
+		return 0;
+		
+	}
