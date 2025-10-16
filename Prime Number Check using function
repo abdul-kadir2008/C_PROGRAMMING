@@ -1,0 +1,36 @@
+/*
+. Prime Number Check
+ Write a function int isPrime(int n).
+ Example 1: 7 ? Prime
+ Example 2: 8 ? Not Prime
+ */
+ #include<stdio.h>
+ int isPrime(int n)
+ {
+ 	int isTrue=1;
+ 	for(int i=2;i<n;i++){
+	 
+	 if(n%i==0)
+	 {
+	 isTrue=0;
+	 break;
+     }}
+   if(isTrue)
+   {
+   	printf("%d is Prime :",n);
+   }
+   else
+   printf("%d is not Prime :",n);
+   return isTrue;
+}
+int main()
+{
+	int num;
+	printf("Lets Check Given Number is Prime or Not:");
+	printf("\nEnter your Number:");
+	scanf("%d",&num);
+   //int result=
+   isPrime(num);
+   //printf("\n %d",result);
+   return 0;
+}
