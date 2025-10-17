@@ -18,11 +18,11 @@ int main()
 {
 	float a,b,c;
 	printf("Enter Your Ammount:");
-	scanf("%fRs",&a);
+	scanf("%f",&a);
 	printf("Enter Interst Rate:");
-	scanf("%fRs",&b);
+	scanf("%f",&b);
 	printf("Enter Years:");
-	scanf("%fRs",&c);
+	scanf("%f",&c);
 	float d=calculateInterest(a,b,c);
 	printf("Total Amount After Interest:%.2fRs",d);
 	return 0;
