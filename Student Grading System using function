@@ -1,0 +1,39 @@
+/*Student Grading System
+
+Scenario:
+College system marks ke basis par grade assign karega.
+
+Marks Range	Grade
+90–100	    A
+75–89	    B
+50–74   	C
+35–49	    D
+Below 35	F
+*/
+#include<stdio.h>
+void getGrade(int marks)
+{
+	if(marks>100)
+	printf("Inviled Marks:");
+	else if(marks>=90&& marks<=100)
+	printf("Grade A");
+	else if(marks>=75&&marks<=89)
+	printf("Grade B");
+	else if(marks>=50&&marks<=74)
+	printf("Grade C");
+	else if(marks>=35&&marks<=49 )
+	printf("Grade D");
+	else if(marks>=0&&marks<35)
+	printf("Grade F");
+	else 
+	printf("Negitive Number not allow");
+	
+}
+int main()
+{
+	int a;
+	printf("Enter Your Marks: ");
+	scanf("%d",&a);
+	getGrade(a);
+    return 0;
+}
