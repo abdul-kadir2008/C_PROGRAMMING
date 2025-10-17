@@ -1,0 +1,29 @@
+/*Bank Interest System
+
+Scenario:
+Bank ko yearly simple interest calculate karna hai.
+float calculateInterest(float amount, float rate, int years);
+Input: 10000 5 2
+Output: Total Amount = ?11000.00
+SI=(P×R×T)/100.
+*/
+#include<stdio.h>
+float calculateInterest(float amount, float rate, int years)
+{
+	float  P=amount,R=rate,T=years;
+	float SI=((P*R*T)/100)+P;
+	return SI;
+}
+int main()
+{
+	float a,b,c;
+	printf("Enter Your Ammount:");
+	scanf("%fRs",&a);
+	printf("Enter Interst Rate:");
+	scanf("%fRs",&b);
+	printf("Enter Years:");
+	scanf("%fRs",&c);
+	float d=calculateInterest(a,b,c);
+	printf("Total Amount After Interst:%.2fRs",d);
+	return 0;
+}
