@@ -1,0 +1,29 @@
+/*ATM Withdrawal Simulation
+
+Scenario:
+ATM withdrawal ke waqt check kare ki balance sufficient hai ya nahi.
+float withdrawMoney(float balance, float amount);
+*/
+#include<stdio.h>
+float withdrawMoney(float balance, float amount)
+{
+//float balance,amount;
+	if(balance>=amount)
+	{
+		printf("%.2fTransaction Successful! Remaining Balance=%.2fRs",amount,balance-amount);
+		printf("\n Thank You: YOu have nice Day.");
+	}
+	else 
+	printf("Sorry,check your blance: \nThank you : You have nice day.");
+	
+}
+int main()
+{
+   float a,b;
+   printf("Enter YOur blance in YOur acount :");
+   scanf("%f",&a);
+   printf("Enter Your Withdrow amount:");
+   scanf("%f",&b);
+   withdrawMoney(a,b);
+   return 0;
+}
