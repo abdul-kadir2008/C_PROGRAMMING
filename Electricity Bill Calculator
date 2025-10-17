@@ -1,0 +1,39 @@
+/*
+Scenario:
+Electric company charges different rates per unit.
+| Units     | Rate per unit |
+| --------- | ------------- |
+| 0–100     | ?1.5          |
+| 101–300   | ?2.5          |
+| Above 300 | ?4.0          |
+*/
+#include<stdio.h>
+float calculateBill(int units)
+{
+float n=units,result=0;
+for(int i=1;i<=n;i++)
+	if(i>=1 && i<=100)
+	{
+		result=result+1.5;
+	}
+	else if(i>=101&&i<=300)
+	{
+		result=result+2.5;
+	}
+	else
+	{
+	result=result+4.0;
+	}
+	return result;
+	
+}
+int main()
+{
+	int k;
+	printf("Enter Your Uses Unit:");
+	scanf("%d",&k);
+float p=calculateBill(k);
+printf("Total Amount For Electricity Bill:%.2fRs. ",p);
+return 0;
+	
+}
