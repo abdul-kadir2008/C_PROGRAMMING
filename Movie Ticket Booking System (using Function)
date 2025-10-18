@@ -1,0 +1,31 @@
+/*Movie Ticket Booking System ???
+?? Scenario:
+
+Cinema hall me age ke hisab se ticket price alag-alag hai.
+
+Age Range	Ticket Price
+Below 12	?100
+12–59    	?200
+60 & Above	?150
+
+?? float calculateTicketPrice(int age);
+*/
+#include<stdio.h>
+int calculateTicketPrice(int age)
+{
+	if(age<12)
+	printf("Ticket Price 100Rs");
+	else if(age>=12&&age<=59)
+	printf("Ticket Price 200Rs");
+	else
+	printf("Ticket Price 150Rs");
+}
+int main()
+{
+	int a;
+	printf("Enter Your Age:");
+	scanf("%d",&a);
+	 calculateTicketPrice(a);
+//	printf("%d", calculateTicketPrice(a));
+	return 0;
+}
