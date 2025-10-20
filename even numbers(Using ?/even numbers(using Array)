@@ -1,5 +1,5 @@
 /*Q4.
-Ek array me 6 numbers lo aur program likho jo even numbers alag print kare.
+Take 6 numbers in an array and write a program to print all even numbers separately.
 */
 #include<stdio.h>
 int main()
