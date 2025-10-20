@@ -1,6 +1,5 @@
-/*Q1.
-
-Ek program likho jo 7 dinon ke temperature input le aur unka average temperature print kare.
+/*
+Write a program to input the temperature of 7 days and print their average temperature.
 */
 #include<stdio.h>
 int main()
