@@ -1,0 +1,25 @@
+/*Q2.
+
+Ek array me 10 students ke marks input lo aur maximum marks print karo.*/
+#include<stdio.h>
+int main()
+{
+int mark[10];
+printf("Enter marks of Student 1: ");
+scanf("%d",&mark[0]);
+int max =mark[0];
+
+for(int i=1;i<10;i++){
+
+printf("Enter marks of Student %d: ",i+1);
+scanf("%d",&mark[i]);
+if(max<mark[i])
+{
+	
+	max =mark[i];
+}
+}
+printf("Hight mark %d",max);
+
+return 0;
+}
