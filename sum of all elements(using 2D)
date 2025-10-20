@@ -1,0 +1,21 @@
+/*
+Write a program to input elements in a 2×3 matrix and print the sum of all elements.
+*/
+#include<stdio.h>
+int main()
+{
+	int sum[2][3],k=1,Total=0;
+	for(int i=0;i<2;i++)
+	{
+		for(int j=0;j<3;j++)
+		{
+			//printf("Enter Your %d Element :",k);
+			scanf("%d",&sum[i][j]);
+			k+=1;
+			Total+=sum[i][j];
+		}
+		printf("\n");
+	}
+	printf("sum of all element = %d",Total);
+	return 0;
+}
