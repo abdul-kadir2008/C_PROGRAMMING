@@ -1,6 +1,6 @@
 /*Q2.
 
-Ek array me 10 students ke marks input lo aur maximum marks print karo.*/
+Take the marks of 10 students in an array and print the maximum marks.*/
 #include<stdio.h>
 int main()
 {
