@@ -1,7 +1,5 @@
 /*
-Q5.
-
-Ek cricket team ke 11 players ke runs input lo. Program likho jo kitne players ne 50+ run banaye ye count kare.
+Input the runs of 11 players in a cricket team. Write a program to count how many players scored more than 50 runs.
 */
 #include<stdio.h>
 int main()
