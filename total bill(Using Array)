@@ -1,0 +1,19 @@
+/*Q3.
+
+Ek shop me 5 items ke prices diye gaye hain. Program likho jo total bill amount nikale.
+*/
+#include<stdio.h>
+int main()
+{
+	int price[5];
+	int Total=0;
+	for(int i=0;i<5;i++)
+	{
+		printf("Enter Price Of Item %d :",i+1);
+	    scanf("%d",&price[i]);
+	    Total+=price[i];
+	
+	}
+	printf("Total bill of Five items = %d",Total);
+	return 0;
+}
