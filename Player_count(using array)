@@ -1,0 +1,28 @@
+/*
+Q5.
+
+Ek cricket team ke 11 players ke runs input lo. Program likho jo kitne players ne 50+ run banaye ye count kare.
+*/
+#include<stdio.h>
+int main()
+{
+	int player[11],count=0;
+	for(int i =0;i<11;i++)
+	{
+		printf("Runs scored by the player %d: ",i+1);
+		scanf("%d",&player[i]);
+		if(player[i]>50)
+		{
+			
+			count++;
+		}
+		
+	}
+	if(count==0)
+	{
+		printf("NO players scroed 50+ Runs!");
+	}
+	else
+	printf("%d Players Scored 50+ Runs!",count);
+	return 0;
+}
