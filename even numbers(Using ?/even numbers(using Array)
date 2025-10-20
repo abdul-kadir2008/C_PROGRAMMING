@@ -1,0 +1,28 @@
+/*Q4.
+Ek array me 6 numbers lo aur program likho jo even numbers alag print kare.
+*/
+#include<stdio.h>
+int main()
+{
+	int Number[6],even[6],count=0;
+	for(int i=0;i<6;i++)
+	{
+		printf("Enter Your %d Number : ",i+1);
+		scanf("%d",&Number[i]);
+	    if(Number[i]%2==0)
+	    {
+	    	even[count] = Number[i];
+	    	count++;
+		}
+	}
+	if (count==0)
+	printf("\nNo Even Number Found!");
+	else
+	{
+		for(int i=0;i<count;i++)
+	printf("\ntotal even number: %d",even[i]);
+	
+	}
+	return 0;
+	
+}
