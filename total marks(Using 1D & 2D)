@@ -1,0 +1,22 @@
+/*Write a program to input marks of 3 students in 3 subjects (as a 3×3 matrix).
+Then print the total marks of each student.
+*/
+#include<stdio.h>
+int main()
+{
+	int Total_Marks[3][3],Total[3]={0};
+	for(int i=0;i<3;i++)
+	{
+		for(int j=0;j<3;j++){
+		
+		printf("Enter Student %d marks of %d subject:",i+1,j+1);
+		scanf("%d",&Total_Marks[i][j]);
+		Total[i]+=Total_Marks[i][j];
+	}	
+}
+for( int i=0;i<3;i++)
+printf("Total marks of Student %d:%d\n",i+1,Total[i]);
+
+
+return 0;
+}
