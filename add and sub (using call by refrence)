@@ -1,0 +1,22 @@
+// Give two Number a and b, add them then subtract then and assign 
+// them to a and b using call by refrence.
+// a and b from user
+//after running code the value of a and b should be.
+#include<stdio.h>
+int function(int *x,int *y)
+{
+	int temp=*x;
+	*x=*x+*y;
+	*y=temp-*y;
+	return *x,*y;
+}
+int main()
+{
+	int a,b;
+	printf("Enter value of a and b: ");
+	scanf("%d %d",&a,&b);
+		function(&a,&b);
+	printf("the value  of a : %d\n",a );
+	printf("the value  of b : %d",b );
+	return 0;
+  }  
