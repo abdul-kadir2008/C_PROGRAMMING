@@ -1,0 +1,29 @@
+/*Q1. Write a C program to find the maximum and minimum element in an array.
+*/
+#include<stdio.h>
+int main()
+{
+	int n,arr[n];
+	printf("How Many Numbers Are Input TO Find Maximum And Minimum: ");
+	scanf("%d",&n);
+	for(int i=0;i<n;i++)
+	{
+		printf("Enter Your %d Number :",i+1);
+		scanf("%d",&arr[i]);
+	}
+ 	int max=arr[0];
+ 		int min=arr[0];
+	for(int j=1;j<n;j++)
+	{
+		if(max<arr[j])
+	{
+	    max=arr[j];
+	}
+	else if(min>arr[j])
+	{
+		min=arr[j];
+	}
+	}
+	printf("The maxium element of array %d\n And The Minimum Value of array %d ",max,min);
+	return 0;
+}
