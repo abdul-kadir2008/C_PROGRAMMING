@@ -1,0 +1,24 @@
+//Q2. Write a C program to calculate the sum and average of all elements in an array.
+
+#include<stdio.h>
+int main()
+{
+	int n,arr[n];
+	float sum=0.0;
+	printf("Enter How Many Element are Input For Sum and average:");
+	scanf("%d",&n);
+	for(int i=0;i<n;i++)
+	{
+	    printf("Enter Your %d Number ",i+1);
+	    scanf("%d",&arr[i]);
+	
+	}
+	for(int i=0;i<n;i++)
+	{
+	    sum=sum+arr[i];
+	}
+	float avg=(sum/n);
+	printf("Sum of The Array =%.2f",sum);
+	printf("\n Average of the Array =%.2f",avg);
+	return 0;
+}
