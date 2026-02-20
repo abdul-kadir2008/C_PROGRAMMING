@@ -1,7 +1,8 @@
  /*Maximum of Three Numbers
  Write a function int maxOfThree(int a, int b, int c).
  Example 1: 10, 25, 15 ? 25
- Example 2: 45, 9, 78 ? 78*/
+ Example 2: 45, 9, 78 ? 78
+Example 3: 34, 72,63 ? 62*/
  #include<stdio.h>
  int maxOfThree(int a,int b,int c)
  {
