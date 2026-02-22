@@ -1,6 +1,7 @@
 /*Q3.
 
-In a shop, prices of 5 items are given. Write a program to calculate the total bill amount.*/
+In a shop, prices of 5 items are given. Write a program to calculate the total bill amount.
+*/
 #include<stdio.h>
 int main()
 {
